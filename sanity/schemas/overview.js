@@ -8,15 +8,11 @@ export default {
       type: 'string',
       title: 'Name',
     },
-    { name: 'description', type: 'text', title: 'Description' },
     {
-      title: 'Skills',
-      name: 'skills',
-      type: 'object',
-      fields: [
-        { name: 'skill', type: 'string', title: 'skill' },
-        { name: 'icon', type: 'image', title: 'Icon' },
-      ],
+      name: 'description',
+      type: 'array',
+      of: [{ type: 'text' }],
+      title: 'Description',
     },
   ],
 };
